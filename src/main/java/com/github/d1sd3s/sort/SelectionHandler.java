@@ -1,5 +1,4 @@
 package com.github.d1sd3s.sort;
-
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.editor.Caret;
 import com.intellij.openapi.editor.Document;
@@ -12,11 +11,6 @@ import com.intellij.openapi.util.TextRange;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-enum Direction {
-    ASCENDING,
-    DESCENDING,
-}
 
 public class SelectionHandler {
     private List<String> lines;
