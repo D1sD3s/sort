@@ -1,8 +1,8 @@
 # sort
 
 ![Build](https://github.com/D1sD3s/sort/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/com.github.d1sd3s.sort.svg)](https://plugins.jetbrains.com/plugin/com.github.d1sd3s.sort)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/com.github.d1sd3s.sort.svg)](https://plugins.jetbrains.com/plugin/com.github.d1sd3s.sort)
+[![Version](https://img.shields.io/jetbrains/plugin/v/23456-sort.svg)](https://plugins.jetbrains.com/plugin/23456-sort)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/23456-sort.svg)](https://plugins.jetbrains.com/plugin/23456-sort)
 
 
 <!-- Plugin description -->
