@@ -30,7 +30,8 @@ public class TestSortAscendingAction extends BasePlatformTestCase {
 
             setSelection(0, 5);
             myFixture.performEditorAction("sort.SortAscending");
-            Assert.assertEquals("bar\nfoo\nhello, world!\nline 1\nline 2\nline 3", myFixture.getEditor().getDocument().getText());
+            Assert.assertEquals("bar\nfoo\nhello, world!\nline 1\nline 2\nline 3",
+                    myFixture.getEditor().getDocument().getText());
             ApplicationManager.getApplication().runWriteAction(psiFile::delete);
         } catch (IOException e) {
             Assert.fail("Failed to copy test file: " + e.getMessage());
@@ -48,7 +49,8 @@ public class TestSortAscendingAction extends BasePlatformTestCase {
             setSelection(0, 5);
             myFixture.performEditorAction("sort.SortDescending");
 
-            Assert.assertEquals("line 3\nline 2\nline 1\nhello, world!\nfoo\nbar", myFixture.getEditor().getDocument().getText());
+            Assert.assertEquals("line 3\nline 2\nline 1\nhello, world!\nfoo\nbar",
+                    myFixture.getEditor().getDocument().getText());
             ApplicationManager.getApplication().runWriteAction(psiFile::delete);
         } catch (IOException e) {
             Assert.fail("Failed to copy test file: " + e.getMessage());
