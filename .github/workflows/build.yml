@@ -122,21 +122,13 @@ jobs:
         run: ./gradlew check
 
       # Collect Tests Result of failed tests
-      # - name: Collect Tests Result
-      #  if: ${{ failure() }}
-      #  uses: actions/upload-artifact@v3
-      #  with:
-      #    name: tests-result
-      #    path: ${{ github.workspace }}/build/reports/tests
-     
-      # Collect all test-related information
-      - name: Collect Test Results
+      - name: Collect Tests Result
+        if: ${{ failure() }}
         uses: actions/upload-artifact@v3
         with:
-          name: test-results
-          path: ${{ github.workspace }}/build
-          if-no-files-found: error
-
+          name: tests-result
+          path: ${{ github.workspace }}/build/reports/tests
+     
 
       # Upload the Kover report to CodeCov
       - name: Upload Code Coverage Report
