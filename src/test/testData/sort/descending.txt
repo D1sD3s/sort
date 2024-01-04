@@ -1,6 +1,6 @@
-f
-e
-d
-c
-b
-a
+bar
+foo
+hello, world!
+line 1
+line 2
+line 3
